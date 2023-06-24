@@ -1,0 +1,35 @@
+#root {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 5%;
+  color: azure;
+  font-size: 24px;
+  font-family: "Lobster", cursive;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+#background {
+  background-color: black;
+}
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+}
+
+.main,
+article {
+  min-height: 100vh;
+}
