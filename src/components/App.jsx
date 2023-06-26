@@ -1,3 +1,7 @@
+import Introduction from "./Introduction.jsx";
+import CurrentProjs from "./CurrentProjs.jsx";
+import PastProjs from "./PastProjs.jsx";
+
 import "../designs/App.css";
 
 function App() {
@@ -7,9 +11,17 @@ function App() {
         id="background"
         className="background"
       />
-      <article id="intro"></article>
+      <nav></nav>
+      <article id="intro">
+        <Introduction />
+      </article>
       <main>
-        <section className="main" />
+        <article className="main">
+          <CurrentProjs />
+        </article>
+        <article className="main">
+          <PastProjs />
+        </article>
       </main>
     </>
   );
