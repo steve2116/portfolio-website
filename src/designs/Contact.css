@@ -1,14 +1,14 @@
-#current-projects > * {
+#contact-me > * {
   text-align: center;
 }
 
-#current-projects > h2 {
+#contact-me > h2 {
   margin-bottom: 25px;
 }
 
-#cp-list {
+#rm-list {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -16,39 +16,39 @@
   margin-top: 100px;
 }
 
-.cp > * {
+.rm > * {
   display: block;
   text-align: center;
 }
 
-.cp {
+.rm {
   padding: 10px;
 }
 
 @media (max-width: 800px) {
-  #current-projects > h2 {
+  #contact-me > h2 {
     font-size: 2em;
   }
 
-  .cp > h3 {
-    font-size: 1.5em;
+  .rm > h3 {
+    font-size: 1.2em;
   }
 
-  .cp > p {
+  .rm > p {
     font-size: 0.9em;
   }
 }
 
 @media (min-width: 801px) {
-  #current-projects > h2 {
+  #contact-me > h2 {
     font-size: 3.5em;
   }
 
-  .cp > h3 {
-    font-size: 2em;
+  .rm > h3 {
+    font-size: 1.5em;
   }
 
-  .cp > p {
+  .rm > p {
     font-size: 1.3em;
   }
 }

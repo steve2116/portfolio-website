@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.pp {
+  padding: 10px;
+}
+
 @media (max-width: 800px) {
   #past-projects > h2 {
     font-size: 2em;

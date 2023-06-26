@@ -1,12 +1,12 @@
-#current-projects > * {
+#future-projects > * {
   text-align: center;
 }
 
-#current-projects > h2 {
+#future-projects > h2 {
   margin-bottom: 25px;
 }
 
-#cp-list {
+#fp-list {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -16,39 +16,39 @@
   margin-top: 100px;
 }
 
-.cp > * {
+.fp > * {
   display: block;
   text-align: center;
 }
 
-.cp {
+.fp {
   padding: 10px;
 }
 
 @media (max-width: 800px) {
-  #current-projects > h2 {
+  #future-projects > h2 {
     font-size: 2em;
   }
 
-  .cp > h3 {
+  .fp > h3 {
     font-size: 1.5em;
   }
 
-  .cp > p {
+  .fp > p {
     font-size: 0.9em;
   }
 }
 
 @media (min-width: 801px) {
-  #current-projects > h2 {
+  #future-projects > h2 {
     font-size: 3.5em;
   }
 
-  .cp > h3 {
+  .fp > h3 {
     font-size: 2em;
   }
 
-  .cp > p {
+  .fp > p {
     font-size: 1.3em;
   }
 }

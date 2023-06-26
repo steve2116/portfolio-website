@@ -3,6 +3,8 @@ import CurrentProjs from "./CurrentProjs.jsx";
 import PastProjs from "./PastProjs.jsx";
 
 import "../designs/App.css";
+import FutureProjs from "./FutureProjs.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </article>
         <article className="main">
           <PastProjs />
+        </article>
+        <article className="main">
+          <FutureProjs />
+        </article>
+        <article className="main">
+          <Contact />
         </article>
       </main>
     </>
