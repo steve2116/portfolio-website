@@ -26,7 +26,7 @@ export default function AboutMe() {
         <h2>About Me</h2>
         <p>A Full Stack Junior Developer</p>
         <p id="about">
-          Coding is my hobby. I've been fascinated with code and logic puzzles,
+          Coding is my hobby. I've always been fascinated with code and logic puzzles,
           but it was only when I learnt to code that I was able to see the
           gears turning behind the screen.
         </p>
