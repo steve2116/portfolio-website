@@ -1,4 +1,10 @@
+import Introduction from "./Introduction.jsx";
+import CurrentProjs from "./CurrentProjs.jsx";
+import PastProjs from "./PastProjs.jsx";
+
 import "../designs/App.css";
+import FutureProjs from "./FutureProjs.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
   return (
@@ -7,9 +13,23 @@ function App() {
         id="background"
         className="background"
       />
-      <article id="intro"></article>
+      <nav></nav>
+      <article id="intro">
+        <Introduction />
+      </article>
       <main>
-        <section className="main" />
+        <article className="main">
+          <CurrentProjs />
+        </article>
+        <article className="main">
+          <PastProjs />
+        </article>
+        <article className="main">
+          <FutureProjs />
+        </article>
+        <article className="main">
+          <Contact />
+        </article>
       </main>
     </>
   );

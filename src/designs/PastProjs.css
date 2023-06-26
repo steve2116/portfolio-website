@@ -1,0 +1,54 @@
+#past-projects > * {
+  text-align: center;
+}
+
+#past-projects > h2 {
+  margin-bottom: 25px;
+}
+
+#pp-list {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.pp > * {
+  display: block;
+  text-align: center;
+}
+
+.pp {
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  #past-projects > h2 {
+    font-size: 2em;
+  }
+
+  .pp > h3 {
+    font-size: 1.5em;
+  }
+
+  .pp > p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 801px) {
+  #past-projects > h2 {
+    font-size: 3.5em;
+  }
+
+  .pp > h3 {
+    font-size: 2em;
+  }
+
+  .pp > p {
+    font-size: 1.3em;
+  }
+}
