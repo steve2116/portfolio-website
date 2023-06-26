@@ -1,9 +1,14 @@
+import { useState } from "react";
 import "../designs/Contact.css";
 
 export default function Contact() {
+  const [focus, setFocus] = useState(false);
   return (
     <>
-      <section id="contact-me">
+      <section
+        id="contact-me"
+        tabIndex="7"
+      >
         <h2>Get in contact</h2>
         <p>How to reach me:</p>
       </section>
@@ -17,9 +22,13 @@ export default function Contact() {
             <h3>LinkedIn:</h3>
             <p>
               <a
+                className={focus ? "focus" : ""}
+                onFocus={() => setFocus(true)}
+                onBlur={() => setFocus(false)}
                 href="https://linkedin.com/in/stephen-w-ackers/"
                 target="_blank"
                 rel="noreferrer noopener"
+                tabIndex="7"
               >
                 stephen-w-ackers
               </a>

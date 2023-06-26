@@ -1,0 +1,93 @@
+#about-me > * {
+  text-align: center;
+}
+
+#about-me > h2 {
+  margin-bottom: 25px;
+}
+
+#about {
+  margin: 25px 150px 0;
+}
+
+#skills > h3 {
+  text-align: center;
+  margin: 100px 0 25px;
+}
+
+#am-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.am {
+  padding: 10px;
+  text-align: center;
+}
+
+.am-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.am-item > section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-item > section > img {
+  width: 120px;
+  height: 100px;
+}
+
+#note {
+  text-align: center;
+  font-style: italic;
+  margin: 25px;
+}
+
+@media (max-width: 800px) {
+  #about-me > h2 {
+    font-size: 2em;
+  }
+
+  #skills > h3 {
+    font-size: 1.6em;
+  }
+
+  .am > h3 {
+    font-size: 1.2em;
+  }
+
+  .am-item > section > p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 801px) {
+  #about-me > h2 {
+    font-size: 3.5em;
+  }
+
+  #skills > h3 {
+    font-size: 2em;
+  }
+
+  .am > h3 {
+    font-size: 1.5em;
+  }
+
+  .am-item > section > p {
+    font-size: 1.3em;
+  }
+}

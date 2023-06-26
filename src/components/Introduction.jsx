@@ -5,7 +5,6 @@ import "../designs/Introduction.css";
 
 export default function Introduction() {
   const [float, setFloat] = useState(false);
-  const [focus, setFocus] = useState(false);
   let interval = null;
 
   function timer() {
@@ -19,24 +18,23 @@ export default function Introduction() {
 
   return (
     <>
-      <section id="its-me">
+      <section
+        id="its-me"
+        tabIndex="2"
+      >
         <h1>Hi, I'm Stevie.</h1>
         <p>I enjoy coding.</p>
         <p>Will you follow my journey?</p>
       </section>
       <a
-        href="#current-projects"
-        onFocus={() => setFocus(true)}
-        onBlur={() => setFocus(false)}
+        href="#about-me"
+        tabIndex="-1"
       >
-        <div
-          className={focus ? "focus" : ""}
-          id={float ? "scroll-down" : "scroll-up"}
-        >
+        <div id={float ? "scroll-down" : "scroll-up"}>
           <img
             src={arrows}
             alt="scroll down arrow"
-            aria-label="go to current projects"
+            aria-label="click to go to current projects"
           />
         </div>
       </a>

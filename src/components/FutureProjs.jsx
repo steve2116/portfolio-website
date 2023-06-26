@@ -3,7 +3,10 @@ import "../designs/FutureProjs.css";
 export default function FutureProjs() {
   return (
     <>
-      <section id="future-projects">
+      <section
+        id="future-projects"
+        tabIndex="6"
+      >
         <h2>My plans for future projects</h2>
         <p>A list of projects I plan to create:</p>
       </section>
