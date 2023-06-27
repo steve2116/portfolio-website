@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "../designs/Contact.css";
+import { themeContext } from "../contexts/light-dark";
 
 export default function Contact() {
   const [focus, setFocus] = useState(false);
+  const { theme } = useContext(themeContext);
   return (
     <>
       <section
@@ -22,7 +24,9 @@ export default function Contact() {
             <h3>LinkedIn:</h3>
             <p>
               <a
-                className={focus ? "focus" : ""}
+                className={
+                  focus ? `focus-${theme} link-${theme}` : `link-${theme}`
+                }
                 onFocus={() => setFocus(true)}
                 onBlur={() => setFocus(false)}
                 href="https://linkedin.com/in/stephen-w-ackers/"
