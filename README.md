@@ -34,4 +34,4 @@ and if you want to make it public
     dist
 ```
 
-4. If you would like to host this website using another method, follow steps 1 and 2 and then follow the instruction of your chosen method
+4. If you would like to host this website using another method, follow steps 1 and 2 and then follow the instructions of your chosen method

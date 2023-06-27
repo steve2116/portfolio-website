@@ -6,10 +6,6 @@
   margin-bottom: 25px;
 }
 
-#about {
-  margin: 25px 150px 0;
-}
-
 #skills > h3 {
   text-align: center;
   margin: 100px 0 25px;
@@ -32,6 +28,7 @@
 .am-item {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -61,6 +58,10 @@
     font-size: 2em;
   }
 
+  #about {
+    margin: 25px 50px 0;
+  }
+
   #skills > h3 {
     font-size: 1.6em;
   }
@@ -77,6 +78,10 @@
 @media (min-width: 801px) {
   #about-me > h2 {
     font-size: 3.5em;
+  }
+
+  #about {
+    margin: 25px 150px 0;
   }
 
   #skills > h3 {

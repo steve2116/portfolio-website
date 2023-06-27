@@ -19,7 +19,7 @@ export default function Introduction() {
   return (
     <>
       <section
-        id="its-me"
+        id="title"
         tabIndex="2"
       >
         <h1>Hi, I'm Stevie.</h1>

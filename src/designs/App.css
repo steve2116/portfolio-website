@@ -70,11 +70,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.75s ease-in-out;
 }
 
 #skip-top {
-  text-align: center;
+  border: 3px solid violet;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1201px) {

@@ -52,7 +52,7 @@ function App() {
           className={focus.b ? "focus" : ""}
           onFocus={() => setFocus((curr) => ({ ...curr, b: true }))}
           onBlur={() => setFocus((curr) => ({ ...curr, b: false }))}
-          href="#its-me"
+          href="#title"
           tabIndex="8"
         >
           Back to top!
