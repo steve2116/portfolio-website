@@ -24,11 +24,11 @@ export default function AboutMe() {
         tabIndex="2"
       >
         <h2>About Me</h2>
-        <p>A Full Stack Junior Developer</p>
+        <p>Full Stack Developer</p>
         <p id="about">
-          Coding is my hobby. I've always been fascinated with code and logic puzzles,
-          but it was only when I learnt to code that I was able to see the
-          gears turning behind the screen.
+          Coding is my hobby. I've always been fascinated with code and logic
+          puzzles, but it was only when I learnt to code that I was able to see
+          the gears turning behind the screen.
         </p>
       </section>
       <section id="skills">
@@ -39,19 +39,31 @@ export default function AboutMe() {
             <section className="am-item">
               <section>
                 <p>Javascript</p>
-                <img src={js} />
+                <img
+                  src={js}
+                  alt="javascript logo"
+                />
               </section>
               <section>
                 <p>C#*</p>
-                <img src={c} />
+                <img
+                  src={c}
+                  alt="c sharp logo"
+                />
               </section>
               <section>
                 <p>Python*</p>
-                <img src={python} />
+                <img
+                  src={python}
+                  alt="python logo"
+                />
               </section>
               <section>
                 <p>R*</p>
-                <img src={r} />
+                <img
+                  src={r}
+                  alt="r logo"
+                />
               </section>
             </section>
           </li>
@@ -60,23 +72,38 @@ export default function AboutMe() {
             <section className="am-item">
               <section>
                 <p>React</p>
-                <img src={react} />
+                <img
+                  src={react}
+                  alt="react logo"
+                />
               </section>
               <section>
                 <p>React Native</p>
-                <img src={reactnative} />
+                <img
+                  src={reactnative}
+                  alt="react native logo"
+                />
               </section>
               <section>
                 <p>Expo</p>
-                <img src={expo} />
+                <img
+                  src={expo}
+                  alt="expo logo"
+                />
               </section>
               <section>
                 <p>HTML5</p>
-                <img src={html} />
+                <img
+                  src={html}
+                  alt="html logo"
+                />
               </section>
               <section>
                 <p>CSS3</p>
-                <img src={css} />
+                <img
+                  src={css}
+                  alt="css logo"
+                />
               </section>
             </section>
           </li>
@@ -85,23 +112,38 @@ export default function AboutMe() {
             <section className="am-item">
               <section>
                 <p>Node</p>
-                <img src={node} />
+                <img
+                  src={node}
+                  alt="node logo"
+                />
               </section>
               <section>
                 <p>Express</p>
-                <img src={express} />
+                <img
+                  src={express}
+                  alt="express logo"
+                />
               </section>
               <section>
                 <p>Firebase</p>
-                <img src={firebase} />
+                <img
+                  src={firebase}
+                  alt="firebase logo"
+                />
               </section>
               <section>
                 <p>PSQL</p>
-                <img src={psql} />
+                <img
+                  src={psql}
+                  alt="pqsl logo"
+                />
               </section>
               <section>
                 <p>MindAR*</p>
-                <img src={mindar} />
+                <img
+                  src={mindar}
+                  alt="mind AR logo"
+                />
               </section>
             </section>
           </li>
@@ -110,7 +152,10 @@ export default function AboutMe() {
             <section className="am-item">
               <section>
                 <p>Jest</p>
-                <img src={jest} />
+                <img
+                  src={jest}
+                  alt="jest logo"
+                />
               </section>
               <section>
                 <p>Supertest</p>
@@ -119,8 +164,8 @@ export default function AboutMe() {
           </li>
         </ul>
         <p id="note">
-          *Please note, I only have experience with these and am unable to code
-          confidently using them
+          *Please note, I only have some experience with these and am unable to
+          code confidently using them
         </p>
       </section>
     </>
