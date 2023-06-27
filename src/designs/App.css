@@ -4,7 +4,6 @@
   border: none;
   list-style: none;
   text-decoration: none;
-  color: azure;
   font-family: "Lobster", cursive;
 }
 
@@ -17,11 +16,18 @@ img {
   max-height: 100%;
 }
 
-a {
+.link-dark {
   color: rgb(109, 255, 189);
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: rgb(236, 77, 109);
+}
+
+.link-light {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(255, 0, 0);
 }
 
 #root {
@@ -36,6 +42,14 @@ a {
   font-size: 24px;
 }
 
+.root-dark {
+  color: azure;
+}
+
+.root-light {
+  color: black;
+}
+
 .background {
   position: fixed;
   height: 100vh;
@@ -45,8 +59,12 @@ a {
   z-index: -2;
 }
 
-#background {
+#background-dark {
   background-color: black;
+}
+
+#background-light {
+  background-color: azure;
 }
 
 #intro {
@@ -86,12 +104,46 @@ a {
   align-items: center;
 }
 
+#theme-button-light,
+#theme-button-dark {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+}
+
+#theme-button-dark {
+  background-color: black;
+}
+
+#theme-button-light {
+  background-color: azure;
+}
+
+#theme-button-light > img,
+#theme-button-dark > img {
+  border-radius: 20%;
+}
+
+/* #theme-button-dark > img {
+  border: 5px solid white;
+}
+
+#theme-button-light > img {
+  border: 5px solid black;
+} */
+
 @media (min-width: 1201px) {
   :root {
     overflow-x: hidden;
   }
 }
 
-.focus {
+.focus-dark {
   border: 5px solid yellow;
+}
+
+.focus-light {
+  border: 5px solid skyblue;
 }

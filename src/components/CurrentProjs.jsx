@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "../designs/CurrentProjs.css";
+import { themeContext } from "../contexts/light-dark";
 
 export default function CurrentProjs() {
   const [focus, setFocus] = useState({ w: false, b: false, f: false });
+  const { theme } = useContext(themeContext);
   return (
     <>
       <section
@@ -19,7 +21,9 @@ export default function CurrentProjs() {
             <p>NC-Games by Northcoders - A website to review games</p>
             <p>
               <a
-                className={focus.w ? "focus" : ""}
+                className={
+                  focus.w ? `focus-${theme} link-${theme}` : `link-${theme}`
+                }
                 onFocus={() => setFocus((curr) => ({ ...curr, w: true }))}
                 onBlur={() => setFocus((curr) => ({ ...curr, w: false }))}
                 href="https://chatmat-reviews.netlify.app/"
@@ -33,7 +37,9 @@ export default function CurrentProjs() {
             <p>
               Repositories:{" "}
               <a
-                className={focus.b ? "focus" : ""}
+                className={
+                  focus.b ? `focus-${theme} link-${theme}` : `link-${theme}`
+                }
                 onFocus={() => setFocus((curr) => ({ ...curr, b: true }))}
                 onBlur={() => setFocus((curr) => ({ ...curr, b: false }))}
                 href="https://github.com/steve2116/be-nc-games"
@@ -44,7 +50,9 @@ export default function CurrentProjs() {
                 Back end,{" "}
               </a>
               <a
-                className={focus.f ? "focus" : ""}
+                className={
+                  focus.f ? `focus-${theme} link-${theme}` : `link-${theme}`
+                }
                 onFocus={() => setFocus((curr) => ({ ...curr, f: true }))}
                 onBlur={() => setFocus((curr) => ({ ...curr, f: false }))}
                 href="https://github.com/steve2116/fe-nc-games"

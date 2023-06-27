@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "../designs/PastProjs.css";
+import { themeContext } from "../contexts/light-dark";
 
 export default function PastProjs() {
   const [focus, setFocus] = useState(false);
+  const { theme } = useContext(themeContext);
   return (
     <>
       <section
@@ -21,7 +23,9 @@ export default function PastProjs() {
             </p>
             <p>
               <a
-                className={focus ? "focus" : ""}
+                className={
+                  focus ? `focus-${theme} link-${theme}` : `link-${theme}`
+                }
                 onFocus={() => setFocus(true)}
                 onBlur={() => setFocus(false)}
                 href="https://github.com/orgs/GeoCachAR/repositories"
