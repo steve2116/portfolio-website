@@ -33,11 +33,15 @@ function App() {
       </nav>
       <button
         id={`theme-button-${theme}`}
+        aria-label="button to change theme"
         onClick={() =>
           setTheme((curr) => (curr === "light" ? "dark" : "light"))
         }
       >
-        <img src={theme === "light" ? dark : light} />
+        <img
+          src={theme === "light" ? dark : light}
+          alt={`${theme} theme logo`}
+        />
       </button>
       <article id="intro">
         <Introduction />
