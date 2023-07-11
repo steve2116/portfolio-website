@@ -3,7 +3,7 @@ import CurrentProjs from "./CurrentProjs.jsx";
 import PastProjs from "./PastProjs.jsx";
 import FutureProjs from "./FutureProjs.jsx";
 import Contact from "./Contact.jsx";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AboutMe from "./AboutMe.jsx";
 import { themeContext } from "../contexts/light-dark.jsx";
 import light from "../assets/light.jpg";
@@ -14,6 +14,12 @@ import "../designs/App.css";
 function App() {
   const [focus, setFocus] = useState({ t: false, b: false });
   const { theme, setTheme } = useContext(themeContext);
+
+  useEffect(() => {
+    dragElement(document.getElementById(`theme-button-${theme}`));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className={`root-${theme}`}>
       <div
@@ -34,9 +40,6 @@ function App() {
       <button
         id={`theme-button-${theme}`}
         aria-label="button to change theme"
-        onClick={() =>
-          setTheme((curr) => (curr === "light" ? "dark" : "light"))
-        }
       >
         <img
           src={theme === "light" ? dark : light}
@@ -76,6 +79,41 @@ function App() {
       </nav>
     </div>
   );
+
+  function dragElement(elmnt) {
+    let pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0,
+      checker;
+    elmnt.addEventListener("mousedown", dragMouseDown);
+
+    function dragMouseDown(e) {
+      e.preventDefault();
+      checker = false;
+      setTimeout(() => {
+        if (checker) setTheme((curr) => (curr === "light" ? "dark" : "light"));
+      }, 250);
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.addEventListener("mouseup", closeDragElement);
+      document.addEventListener("mousemove", elementDrag);
+    }
+    function elementDrag(e) {
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      elmnt.style.top = `${elmnt.offsetTop - pos2}px`;
+      elmnt.style.left = `${elmnt.offsetLeft - pos1}px`;
+    }
+    function closeDragElement() {
+      checker = true;
+      document.removeEventListener("mouseup", closeDragElement);
+      document.removeEventListener("mousemove", elementDrag);
+    }
+  }
 }
 
 export default App;
