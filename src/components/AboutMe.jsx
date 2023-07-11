@@ -13,6 +13,13 @@ import firebase from "../assets/firebase.png";
 import mindar from "../assets/mindar.png";
 import psql from "../assets/psql.jpg";
 import jest from "../assets/jest.png";
+import lambda from "../assets/lambda.jpeg";
+import dynamodb from "../assets/dynamodb.jpeg";
+import apigateway from "../assets/apigateway.jpeg";
+import typescript from "../assets/typescript.jpeg";
+import storybook from "../assets/storybook.jpeg";
+import vue from "../assets/vue.jpeg";
+import cypress from "../assets/cypress.jpeg";
 
 import "../designs/AboutMe.css";
 
@@ -26,9 +33,9 @@ export default function AboutMe() {
         <h2>About Me</h2>
         <p>Full Stack Developer</p>
         <p id="about">
-          Coding is my hobby. I've always been fascinated with code and logic
+          {`Coding is my hobby. I've always been fascinated with code and logic
           puzzles, but it was only when I learnt to code that I was able to see
-          the gears turning behind the screen.
+          the gears turning behind the screen.`}
         </p>
       </section>
       <section id="skills">
@@ -63,6 +70,13 @@ export default function AboutMe() {
                 <img
                   src={r}
                   alt="r logo"
+                />
+              </section>
+              <section>
+                <p>Typescript*</p>
+                <img
+                  src={typescript}
+                  alt="typescript logo"
                 />
               </section>
             </section>
@@ -105,6 +119,20 @@ export default function AboutMe() {
                   alt="css logo"
                 />
               </section>
+              <section>
+                <p>Vue*</p>
+                <img
+                  src={vue}
+                  alt="vue logo"
+                />
+              </section>
+              <section>
+                <p>Storybook*</p>
+                <img
+                  src={storybook}
+                  alt="storybook logo"
+                />
+              </section>
             </section>
           </li>
           <li className="am">
@@ -145,6 +173,27 @@ export default function AboutMe() {
                   alt="mind AR logo"
                 />
               </section>
+              <section>
+                <p>AWS Lambda*</p>
+                <img
+                  src={lambda}
+                  alt="lambda logo"
+                />
+              </section>
+              <section>
+                <p>AWS DynamoDB*</p>
+                <img
+                  src={dynamodb}
+                  alt="dynamodb logo"
+                />
+              </section>
+              <section>
+                <p>AWS API Gateway*</p>
+                <img
+                  src={apigateway}
+                  alt="api gateway logo"
+                />
+              </section>
             </section>
           </li>
           <li className="am">
@@ -160,12 +209,19 @@ export default function AboutMe() {
               <section>
                 <p>Supertest</p>
               </section>
+              <section>
+                <p>Cypress*</p>
+                <img
+                  src={cypress}
+                  alt="cypress logo"
+                />
+              </section>
             </section>
           </li>
         </ul>
         <p id="note">
-          *Please note, I only have some experience with these and am unable to
-          code confidently using them
+          *Please note, I have little experience or am in the process of
+          learning these, so cannot code confidently using them.
         </p>
       </section>
     </>
