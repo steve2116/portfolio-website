@@ -13,10 +13,6 @@ export default function FutureProjs() {
       <section>
         <ul id="fp-list">
           <li className="fp">
-            <h3>PEGN</h3>
-            <p>The Path of Ever Growing Numbers - an RPG/idle game</p>
-          </li>
-          <li className="fp">
             <h3>Sinlations</h3>
             <p>A site to post translations of online novels</p>
           </li>
