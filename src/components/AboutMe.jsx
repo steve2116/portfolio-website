@@ -73,7 +73,7 @@ export default function AboutMe() {
                 />
               </section>
               <section>
-                <p>Typescript*</p>
+                <p>Typescript</p>
                 <img
                   src={typescript}
                   alt="typescript logo"

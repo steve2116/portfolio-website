@@ -3,7 +3,7 @@ import "../designs/CurrentProjs.css";
 import { themeContext } from "../contexts/light-dark";
 
 export default function CurrentProjs() {
-  const [focus, setFocus] = useState({ w: false, b: false, f: false });
+  const [focus, setFocus] = useState(false);
   const { theme } = useContext(themeContext);
   return (
     <>
@@ -16,23 +16,11 @@ export default function CurrentProjs() {
       </section>
       <section>
         <ul id="cp-list">
-          <li className="cp">
-            <h3>ChatMat</h3>
-            <p>NC-Games by Northcoders - A website to review games</p>
+          <li className="fp">
+            <h3>PEGN</h3>
             <p>
-              <a
-                className={
-                  focus.w ? `focus-${theme} link-${theme}` : `link-${theme}`
-                }
-                onFocus={() => setFocus((curr) => ({ ...curr, w: true }))}
-                onBlur={() => setFocus((curr) => ({ ...curr, w: false }))}
-                href="https://chatmat-reviews.netlify.app/"
-                target="_blank"
-                rel="noreferrer noopener"
-                tabIndex="4"
-              >
-                The website
-              </a>
+              The Path of Ever Growing Numbers - an RPG/idle game. My attempt at
+              making a game, as well as a long term project
             </p>
             <p>
               Repositories:{" "}
@@ -42,13 +30,23 @@ export default function CurrentProjs() {
                 }
                 onFocus={() => setFocus((curr) => ({ ...curr, b: true }))}
                 onBlur={() => setFocus((curr) => ({ ...curr, b: false }))}
-                href="https://github.com/steve2116/be-nc-games"
+                href="https://github.com/steve2116/pegn"
                 target="_blank"
                 rel="noreferrer noopener"
                 tabIndex="4"
               >
                 Back end,{" "}
               </a>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </>
+  );
+}
+
+/*
+
               <a
                 className={
                   focus.f ? `focus-${theme} link-${theme}` : `link-${theme}`
@@ -62,10 +60,4 @@ export default function CurrentProjs() {
               >
                 Front end
               </a>
-            </p>
-          </li>
-        </ul>
-      </section>
-    </>
-  );
-}
+*/
